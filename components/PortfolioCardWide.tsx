@@ -29,7 +29,7 @@ const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
 
   return (
     <article
-      className={`flex h-full items-center justify-between gap-10 rounded-3xl border border-solid border-[#DFE3E7] bg-white p-4 max-md:flex-col xl:p-8 ${className}`}
+      className={`flex h-full items-center justify-between gap-10 rounded-3xl border border-solid border-[#DFE3E7] bg-white px-4 py-4 max-md:flex-col xl:px-8 xl:py-0 ${className}`}
     >
       <div className="my-auto flex max-w-[340px] flex-col self-stretch">
         <div className="w-full">
