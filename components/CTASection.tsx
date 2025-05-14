@@ -38,7 +38,7 @@ const CTASection = () => {
                 alt="Location icon"
                 className="aspect-square w-6 shrink-0 object-contain"
               />
-              <address className="w-[85px] text-white not-italic">Dubai, UAE</address>
+              <address className="text-white not-italic">Dubai, UAE</address>
             </div>
           </div>
         </div>
@@ -50,9 +50,11 @@ const CTASection = () => {
       </div>
       <div className="my-auto w-[542px] min-w-60 self-stretch overflow-hidden px-7 max-md:max-w-full max-md:px-5">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/165480485adc9f4c4decb90f8851e094abda0c88?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
+          // alfred-with-building.png
+          src={'/assets/alfred-with-building.png'}
+          // src="https://cdn.builder.io/api/v1/image/assets/TEMP/165480485adc9f4c4decb90f8851e094abda0c88?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
           alt="Alfred mascot"
-          className="aspect-[0.93] w-full object-contain max-md:max-w-full"
+          className="aspect-[0.93] w-full object-cover max-md:max-w-full"
         />
       </div>
     </section>

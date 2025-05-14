@@ -28,7 +28,7 @@ function LandingPageVariation2() {
       <Container>
         <LocationSection />
       </Container>
-      <div className="bg-sky-400">
+      <div className="bg-[#4AACE3]">
         <Container className="">
           <CTASection />
         </Container>
