@@ -18,8 +18,8 @@ const LegacySection = () => {
   ];
 
   return (
-    <section className="flex flex-wrap items-center justify-between gap-10 py-20 lg:pt-40 lg:pb-20">
-      <div className="my-auto w-[450px] min-w-60 self-stretch overflow-hidden rounded-3xl max-md:max-w-full">
+    <section className="flex flex-col items-center justify-center gap-10 py-20 lg:flex-row lg:gap-24 lg:pt-40 lg:pb-20 2xl:justify-between">
+      <div className="my-auto self-stretch overflow-hidden rounded-3xl max-md:max-w-full md:min-w-[400px] 2xl:min-w-[450px]">
         <div className="relative flex min-h-[570px] w-full flex-col pt-20 max-md:max-w-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/844c2e831fe8eaf713adea20fb8b2ed55dc8a229?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
@@ -29,11 +29,11 @@ const LegacySection = () => {
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/46440f75aa9469603ef77fe966416f9a99e81128?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
             alt="Alfred Holdings Legacy"
-            className="absolute bottom-0 z-10 aspect-[0.92] w-full object-contain max-md:max-w-full md:relative md:bottom-auto"
+            className="absolute bottom-0 z-10 aspect-[0.92] w-full object-contain max-md:max-w-full"
           />
         </div>
       </div>
-      <article className="my-auto w-[637px] min-w-60 self-stretch max-md:max-w-full">
+      <article className="my-auto self-stretch max-md:max-w-full">
         <div className="w-full max-md:max-w-full">
           <div className="w-full border-b border-solid border-b-[#B9C5C9] pb-8 max-md:max-w-full">
             <h2 className="text-5xl leading-[56px] tracking-tighter text-slate-800 max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">

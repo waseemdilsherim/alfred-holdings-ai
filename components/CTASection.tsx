@@ -3,10 +3,10 @@ import React from 'react';
 const CTASection = () => {
   return (
     <section
-      className="flex w-full flex-wrap items-center justify-between gap-10 max-md:max-w-full"
+      className="flex w-full flex-col items-center justify-between gap-10 max-md:max-w-full lg:flex-row"
       id="contact"
     >
-      <div className="relative my-auto flex w-[568px] min-w-60 flex-col items-start justify-center self-stretch max-md:max-w-full">
+      <div className="relative my-auto mt-20 flex flex-col items-start justify-center self-stretch max-md:max-w-full">
         <div className="border-opacity-50 z-0 w-full self-stretch border-b border-sky-200 pb-8 max-md:max-w-full">
           <h2 className="text-6xl leading-[74px] tracking-tighter text-white max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
             <span className="text-white">Let's </span>
@@ -18,9 +18,9 @@ const CTASection = () => {
             Connect with us to explore endless possibilities.
           </p>
         </div>
-        <div className="z-0 mt-8 flex items-start gap-10 text-base leading-loose font-medium tracking-normal text-white">
+        <div className="z-0 my-8 flex flex-col items-start gap-4 text-base leading-loose font-medium tracking-normal text-white lg:flex-row lg:gap-8">
           <div className="whitespace-nowrap">
-            <div className="flex items-start gap-3">
+            <div className="flex items-center justify-center gap-3">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/91cc3ddb2e1f9855b5da214fafd1e4c0e15d4a5b?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
                 alt="Email icon"
@@ -32,7 +32,7 @@ const CTASection = () => {
             </div>
           </div>
           <div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center justify-center gap-3 lg:ml-8">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/752135848fe96f598abd4c286d246f08cca3c309?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
                 alt="Location icon"

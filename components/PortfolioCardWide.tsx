@@ -29,7 +29,7 @@ const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
 
   return (
     <article
-      className={`flex h-full items-center justify-between gap-10 rounded-3xl border border-solid border-[#DFE3E7] bg-white pl-10 max-md:flex-col max-md:pl-5 ${className}`}
+      className={`flex h-full items-center justify-between gap-10 rounded-3xl border border-solid border-[#DFE3E7] bg-white p-4 max-md:flex-col xl:p-8 ${className}`}
     >
       <div className="my-auto flex max-w-[340px] flex-col self-stretch">
         <div className="w-full">
@@ -42,7 +42,7 @@ const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
               />
             </div>
           </div>
-          <h3 className="mt-3 font-sans text-[32px] leading-10 font-medium tracking-tighter text-slate-800">
+          <h3 className="mt-3 font-sans text-[26px] leading-10 font-medium tracking-tighter text-slate-800 2xl:text-[32px]">
             {baseTitle}
             {isSoon && <span className="mt-1 block">(Coming Soon)</span>}
           </h3>

@@ -30,7 +30,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     <article
       className={`flex h-full flex-col rounded-3xl border border-solid border-[#DFE3E7] bg-white ${className}`}
     >
-      <div className="flex w-full flex-col p-8 max-md:px-5">
+      <div className="flex w-full flex-col p-4 max-md:px-5 xl:p-8">
         <div className="w-full">
           <div className="w-full max-w-[220px] border-b border-solid border-b-[#DFE3E7] pb-4 max-md:max-w-[180px]">
             <div className="h-8">
@@ -41,7 +41,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
               />
             </div>
           </div>
-          <h3 className="mt-3 font-sans text-[32px] leading-none font-medium tracking-tighter text-slate-800">
+          <h3 className="mt-3 font-sans text-[26px] leading-none font-medium tracking-tighter text-slate-800 2xl:text-[32px]">
             {isSoon ? (
               <>
                 {title.replace(' (Coming Soon)', '')}

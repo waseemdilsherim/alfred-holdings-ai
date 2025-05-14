@@ -226,7 +226,7 @@ const PortfolioSection = () => {
       </div>
 
       {/* Desktop Layout */}
-      <div className="mt-16 hidden max-w-full self-center md:block">
+      <div className="mt-16 hidden max-w-full self-center lg:block">
         <div className="flex gap-5">
           {/* Left column - 2/3 width */}
           <div className="w-[67%]">
@@ -324,7 +324,7 @@ const PortfolioSection = () => {
       </div>
 
       {/* Mobile Slider */}
-      <div className="mt-10 md:hidden">
+      <div className="mt-10 lg:hidden">
         <div className="relative">
           {/* Slider container with transition effect and swipe handlers */}
           <div
