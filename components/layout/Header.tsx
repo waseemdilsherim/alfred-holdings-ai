@@ -131,7 +131,7 @@ const Header = () => {
               </div>
 
               <div className="mt-4 rounded-3xl bg-white p-8">
-                <div className="flex flex-col space-y-8">
+                <div className="flex flex-col space-y-6">
                   <a
                     href="#about"
                     onClick={toggleMenu}
@@ -157,7 +157,7 @@ const Header = () => {
                   <a
                     href="#contact"
                     onClick={toggleMenu}
-                    className="mt-8 flex w-full justify-center rounded-[30px] bg-slate-800 px-7 py-4 text-center font-semibold tracking-tight text-blue-50"
+                    className="mt-4 flex w-full justify-center rounded-[30px] bg-slate-800 px-7 py-4 text-center font-semibold tracking-tight text-blue-50"
                   >
                     Contact Us
                   </a>

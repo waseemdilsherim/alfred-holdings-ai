@@ -18,7 +18,7 @@ const LegacySection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10 py-20 lg:flex-row lg:gap-24 lg:pt-40 lg:pb-20 2xl:justify-between">
+    <section className="flex flex-col items-center justify-center gap-10 pt-20 pb-10 lg:flex-row lg:gap-24 lg:pt-40 lg:pb-20 2xl:justify-between">
       <div className="my-auto self-stretch overflow-hidden rounded-3xl max-md:max-w-full md:min-w-[400px] 2xl:min-w-[450px]">
         <div className="relative flex min-h-[570px] w-full flex-col pt-20 max-md:max-w-full">
           <img

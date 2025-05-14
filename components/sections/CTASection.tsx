@@ -45,7 +45,7 @@ const CTASection = () => {
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/77303f02226966683a6b50b4ef73e72c7375cd96?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
           alt="Decorative element"
-          className="absolute top-[60px] right-[50px] left-[150px] z-0 aspect-square h-[32px] w-[32px] object-contain md:top-[70px] md:right-[255px] md:left-auto md:h-[73px] md:w-[73px]"
+          className="absolute top-[60px] right-[50px] left-[150px] z-0 aspect-square h-[32px] w-[32px] object-contain md:top-[70px] md:right-[255px] md:left-[240px] md:h-[73px] md:w-[73px]"
         />
       </div>
       <div className="my-auto w-[542px] min-w-60 self-stretch overflow-hidden px-7 max-md:max-w-full max-md:px-5">
