@@ -10,7 +10,7 @@ import CTASection from '@/components/sections/CTASection';
 import Footer from '@/components/layout/Footer';
 import { Container } from '@/components/layout/container';
 
-function LandingPageVariation2() {
+function AlfredHoldings() {
   return (
     <main className="overflow-hidden bg-[#F4F5F5]">
       <Header />
@@ -38,4 +38,4 @@ function LandingPageVariation2() {
   );
 }
 
-export default LandingPageVariation2;
+export default AlfredHoldings;

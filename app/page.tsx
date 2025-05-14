@@ -1,5 +1,5 @@
-import LandingPageVariation2 from '@/components/features/LandingPageVariation2';
+import AlfredHoldings from '@/components/features/AlfredHoldings';
 
 export default function Home() {
-  return <LandingPageVariation2 />;
+  return <AlfredHoldings />;
 }
