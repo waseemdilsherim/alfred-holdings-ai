@@ -1,0 +1,73 @@
+import React, { ReactNode } from 'react';
+
+interface PortfolioCardProps {
+  logo: string;
+  title: string;
+  description: ReactNode;
+  image: string;
+  buttonText?: string;
+  buttonIcon?: string;
+  hasButton?: boolean;
+  className?: string;
+}
+
+const PortfolioCard: React.FC<PortfolioCardProps> = ({
+  logo,
+  title,
+  description,
+  image,
+  buttonText,
+  buttonIcon,
+  hasButton = true,
+  className = '',
+}) => {
+  // Handle (Coming Soon) text in title
+  const displayTitle = title.includes('(Coming Soon)') ? title : title;
+  const isSoon =
+    title.includes('(Coming Soon)') || title.includes('.bh') || title.includes('.ae (');
+
+  return (
+    <article
+      className={`flex h-full flex-col rounded-3xl border border-solid border-[#DFE3E7] bg-white ${className}`}
+    >
+      <div className="flex w-full flex-col p-8 max-md:px-5">
+        <div className="w-full">
+          <div className="w-[202px] max-w-full border-b border-solid border-b-[#DFE3E7] pb-4">
+            <img src={logo} alt={`${title} logo`} className="aspect-[6.33] w-full object-contain" />
+          </div>
+          <h3 className="mt-3 text-3xl leading-none tracking-tighter text-slate-800">
+            {isSoon ? (
+              <>
+                {title.replace(' (Coming Soon)', '')}
+                {title.includes('Coming Soon') && <span className="mt-1 block">(Coming Soon)</span>}
+              </>
+            ) : (
+              displayTitle
+            )}
+          </h3>
+          <p className="mt-3 text-base leading-7 font-medium tracking-normal text-slate-600">
+            {description}
+          </p>
+        </div>
+        {hasButton && (
+          <a
+            href="#"
+            className="mt-6 flex items-center gap-2 self-start text-base leading-none font-semibold tracking-tight text-slate-800 capitalize"
+          >
+            <span className="my-auto self-stretch text-slate-800">{buttonText}</span>
+            <img
+              src={buttonIcon}
+              alt="Arrow"
+              className="my-auto aspect-square w-6 shrink-0 self-stretch object-contain"
+            />
+          </a>
+        )}
+      </div>
+      <div className="mt-auto w-full overflow-hidden px-2.5 max-md:pr-5">
+        <img src={image} alt={title} className="aspect-[1.2] w-full object-contain" />
+      </div>
+    </article>
+  );
+};
+
+export default PortfolioCard;

@@ -1,24 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alfred Holdings
+
+A modern investment company website built with Next.js 15 and Tailwind CSS v4.
+
+## Tech Stack
+
+- **Next.js 15**: Latest version of the React framework with App Router
+- **Tailwind CSS v4**: Utility-first CSS framework
+- **Headless UI**: Unstyled, accessible UI components
+- **Utility Libraries**:
+  - `clsx`: Utility for conditional class names
+  - `tailwind-merge (twMerge)`: Merge Tailwind CSS classes without conflicts
+  - `class-variance-authority (cva)`: Create variant components with Tailwind CSS
+
+## Project Structure
+
+The project follows a clean, modular structure:
+
+```
+alfred-holdings/
+├── app/                  # Next.js App Router
+│   ├── about/            # About page
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── components/           # Reusable components
+│   ├── layout/           # Layout components
+│   │   ├── container.tsx # Container component
+│   │   ├── footer.tsx    # Footer component
+│   │   └── header.tsx    # Header component
+│   └── ui/               # UI components
+│       ├── button.tsx    # Button component
+│       └── card.tsx      # Card component
+├── lib/                  # Utility functions
+│   └── utils.ts          # Helper utilities
+├── public/               # Static assets
+├── tailwind.config.ts    # Tailwind CSS configuration
+├── prettier.config.js    # Prettier configuration
+└── eslint.config.mjs     # ESLint configuration
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.17 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/alfred-holdings.git
+cd alfred-holdings
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Modern, responsive design
+- Type-safe components with TypeScript
+- Component variants with class-variance-authority
+- Optimized for performance and SEO
+- Accessible UI components
+
+## Customization
+
+- **Theme**: Customize colors, fonts, and other design elements in the `tailwind.config.ts` file
+- **Components**: Extend or modify existing components in the `components` directory
+- **Pages**: Add new pages in the `app` directory
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Learn More
 
