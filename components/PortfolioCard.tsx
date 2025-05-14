@@ -32,8 +32,14 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     >
       <div className="flex w-full flex-col p-8 max-md:px-5">
         <div className="w-full">
-          <div className="w-[202px] max-w-full border-b border-solid border-b-[#DFE3E7] pb-4">
-            <img src={logo} alt={`${title} logo`} className="aspect-[6.33] w-full object-contain" />
+          <div className="w-full max-w-[220px] border-b border-solid border-b-[#DFE3E7] pb-4 max-md:max-w-[180px]">
+            <div className="h-8">
+              <img
+                src={logo}
+                alt={`${title} logo`}
+                className="h-full max-w-full object-contain object-left"
+              />
+            </div>
           </div>
           <h3 className="mt-3 text-3xl leading-none tracking-tighter text-slate-800">
             {isSoon ? (

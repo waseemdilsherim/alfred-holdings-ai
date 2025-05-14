@@ -3,7 +3,7 @@ import React from 'react';
 interface PortfolioCardWideProps {
   logo: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   image: string;
   buttonText?: string;
   buttonIcon?: string;
@@ -33,8 +33,14 @@ const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
     >
       <div className="my-auto flex max-w-[340px] flex-col self-stretch">
         <div className="w-full">
-          <div className="w-[219px] max-w-full border-b border-solid border-b-[#DFE3E7] pb-4">
-            <img src={logo} alt={`${title} logo`} className="aspect-[6.85] w-full object-contain" />
+          <div className="w-full max-w-[220px] border-b border-solid border-b-[#DFE3E7] pb-4 max-md:max-w-[180px]">
+            <div className="h-8">
+              <img
+                src={logo}
+                alt={`${title} logo`}
+                className="h-full max-w-full object-contain object-left"
+              />
+            </div>
           </div>
           <h3 className="mt-3 text-3xl leading-10 tracking-tighter text-slate-800">
             {baseTitle}
