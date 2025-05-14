@@ -29,7 +29,7 @@ const LegacySection = () => {
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/46440f75aa9469603ef77fe966416f9a99e81128?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
             alt="Alfred Holdings Legacy"
-            className="relative z-10 aspect-[0.92] w-full object-contain max-md:max-w-full"
+            className="absolute bottom-0 z-10 aspect-[0.92] w-full object-contain max-md:max-w-full md:relative md:bottom-auto"
           />
         </div>
       </div>

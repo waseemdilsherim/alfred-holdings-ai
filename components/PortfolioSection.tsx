@@ -175,7 +175,6 @@ const PortfolioSection = () => {
           buttonText={card.buttonText}
           buttonIcon={card.buttonIcon}
           hasButton={card.hasButton}
-          className={className}
         />
       );
     }
