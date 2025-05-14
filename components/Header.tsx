@@ -90,10 +90,10 @@ const Header = () => {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-white p-5">
+          <div className="fixed inset-0 z-50 bg-transparent px-5 py-4">
             <div className="flex h-full w-full flex-col">
-              <div className="flex items-center justify-between">
-                <div className="rounded-full bg-white px-6 py-3 shadow-sm">
+              <div className="mb-6 flex items-center justify-between">
+                <div className="rounded-full bg-white px-6 py-3">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/bba702e66a543ae322606ea1accf7387b7d792f8?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
                     alt="Alfred Holdings Logo"
@@ -130,34 +130,34 @@ const Header = () => {
                 </button>
               </div>
 
-              <div className="mt-8 flex flex-col space-y-8">
-                <a
-                  href="#about"
-                  onClick={toggleMenu}
-                  className="text-lg font-medium text-slate-800"
-                >
-                  About Us
-                </a>
-                <a
-                  href="#portfolio"
-                  onClick={toggleMenu}
-                  className="text-lg font-medium text-slate-800"
-                >
-                  Our Portfolio
-                </a>
-                <a
-                  href="#leadership"
-                  onClick={toggleMenu}
-                  className="text-lg font-medium text-slate-800"
-                >
-                  Leadership
-                </a>
+              <div className="mt-4 rounded-3xl bg-white p-8">
+                <div className="flex flex-col space-y-8">
+                  <a
+                    href="#about"
+                    onClick={toggleMenu}
+                    className="text-lg font-medium text-slate-800"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#portfolio"
+                    onClick={toggleMenu}
+                    className="text-lg font-medium text-slate-800"
+                  >
+                    Our Portfolio
+                  </a>
+                  <a
+                    href="#leadership"
+                    onClick={toggleMenu}
+                    className="text-lg font-medium text-slate-800"
+                  >
+                    Leadership
+                  </a>
 
-                <div className="mt-auto pt-8">
                   <a
                     href="#contact"
                     onClick={toggleMenu}
-                    className="flex w-full justify-center rounded-[30px] bg-slate-800 px-7 py-4 text-center font-semibold tracking-tight text-blue-50"
+                    className="mt-8 flex w-full justify-center rounded-[30px] bg-slate-800 px-7 py-4 text-center font-semibold tracking-tight text-blue-50"
                   >
                     Contact Us
                   </a>
