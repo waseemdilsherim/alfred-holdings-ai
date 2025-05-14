@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section
-      className="flex w-full flex-col bg-gradient-to-b from-[#4AACE3] to-[#FFFFFF] pt-20 max-md:max-w-full"
+      className="flex w-full flex-col bg-gradient-to-b from-[#4AACE3] to-[#FFFFFF] pt-4 max-md:max-w-full lg:pt-20"
       id="about"
     >
       <div className="flex flex-col self-center p-4 md:p-0">

@@ -214,7 +214,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <section className="flex w-full flex-col pb-20 lg:pb-40" id="portfolio">
+    <section className="flex w-full flex-col pb-20 lg:pt-20 lg:pb-40" id="portfolio">
       <div className="flex w-full flex-col justify-center max-md:max-w-full">
         <h2 className="font-sans text-5xl leading-none tracking-tighter text-slate-800 max-md:max-w-full max-md:text-4xl">
           <span className="text-[#1D83BC]">A Portfolio</span> of Trust-Driven Innovation

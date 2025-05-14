@@ -18,7 +18,7 @@ const LegacySection = () => {
   ];
 
   return (
-    <section className="flex flex-wrap items-center justify-between gap-10 py-20 lg:py-40">
+    <section className="flex flex-wrap items-center justify-between gap-10 py-20 lg:pt-40 lg:pb-20">
       <div className="my-auto w-[450px] min-w-60 self-stretch overflow-hidden rounded-3xl max-md:max-w-full">
         <div className="relative flex min-h-[570px] w-full flex-col pt-20 max-md:max-w-full">
           <img

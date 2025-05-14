@@ -12,7 +12,7 @@ import { Container } from './layout/container';
 
 function LandingPageVariation2() {
   return (
-    <main className="overflow-hidden bg-white">
+    <main className="overflow-hidden bg-[#F4F5F5]">
       <Header />
       <HeroSection />
       <Container>
@@ -28,7 +28,11 @@ function LandingPageVariation2() {
       <Container>
         <LocationSection />
       </Container>
-      <CTASection />
+      <div className="bg-sky-400">
+        <Container className="">
+          <CTASection />
+        </Container>
+      </div>
       <Footer />
     </main>
   );

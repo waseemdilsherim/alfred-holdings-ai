@@ -14,8 +14,8 @@ const LocationSection = () => {
   ];
 
   return (
-    <section className="flex w-full flex-wrap items-center justify-between gap-10 py-40 max-md:max-w-full max-md:px-5 max-md:py-24">
-      <div className="my-auto w-[508px] min-w-60 self-stretch max-md:max-w-full">
+    <section className="flex w-full flex-wrap items-center justify-between gap-10 py-40 max-md:max-w-full max-md:py-24">
+      <div className="my-auto self-stretch max-md:max-w-full">
         <h2 className="w-full text-5xl leading-none tracking-tighter text-slate-800 max-md:max-w-full max-md:text-4xl">
           Proudly <span className="text-[#1D83BC]">Serving the Gulf</span>
         </h2>
