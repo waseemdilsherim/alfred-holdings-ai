@@ -9,7 +9,6 @@ interface ProfileCardProps {
   buttonIcon?: string;
   hasButton?: boolean;
   className?: string;
-  isComingSoon?: boolean;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -21,7 +20,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   buttonIcon,
   hasButton = false,
   className = '',
-  isComingSoon = false,
 }) => {
   // Extract base title without "Coming Soon" text
   const displayTitle = title.includes('(Coming Soon)')

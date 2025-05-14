@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, TouchEvent } from 'react';
+import React, { useState, useRef, TouchEvent } from 'react';
 import PortfolioCard from './PortfolioCard';
 import PortfolioCardWide from './PortfolioCardWide';
 import ProfileCard from './ProfileCard';
@@ -17,31 +17,10 @@ interface PortfolioCardData {
 
 const PortfolioSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const touchStartRef = useRef<number>(0);
   const touchEndRef = useRef<number>(0);
   const sliderRef = useRef<HTMLDivElement>(null);
-
-  // Check if window is available (client-side) and determine mobile state
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Set initial value
-    if (typeof window !== 'undefined') {
-      handleResize();
-      window.addEventListener('resize', handleResize);
-    }
-
-    // Cleanup
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
 
   // Cards data for slider
   const portfolioCards: PortfolioCardData[] = [
@@ -185,8 +164,8 @@ const PortfolioSection = () => {
   };
 
   // Render card based on type
-  const renderCard = (card: PortfolioCardData, className = '', isMobile = false) => {
-    if (isMobile) {
+  const renderCard = (card: PortfolioCardData, className = '', forMobile = false) => {
+    if (forMobile) {
       return (
         <ProfileCard
           logo={card.logo}
@@ -195,6 +174,8 @@ const PortfolioSection = () => {
           image={card.image}
           buttonText={card.buttonText}
           buttonIcon={card.buttonIcon}
+          hasButton={card.hasButton}
+          className={className}
         />
       );
     }
