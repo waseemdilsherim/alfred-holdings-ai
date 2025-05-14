@@ -1,104 +1,76 @@
-# Alfred Holdings
+# Alfred Holdings Website
 
-A modern investment company website built with Next.js 15 and Tailwind CSS v4.
-
-## Tech Stack
-
-- **Next.js 15**: Latest version of the React framework with App Router
-- **Tailwind CSS v4**: Utility-first CSS framework
-- **Headless UI**: Unstyled, accessible UI components
-- **Utility Libraries**:
-  - `clsx`: Utility for conditional class names
-  - `tailwind-merge (twMerge)`: Merge Tailwind CSS classes without conflicts
-  - `class-variance-authority (cva)`: Create variant components with Tailwind CSS
+This repository contains the codebase for the Alfred Holdings website. The website is built using Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Project Structure
 
-The project follows a clean, modular structure:
+The project follows a structured organization:
 
 ```
-alfred-holdings/
-├── app/                  # Next.js App Router
+├── app/                  # Next.js app directory
 │   ├── about/            # About page
-│   ├── globals.css       # Global styles
 │   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Home page
-├── components/           # Reusable components
-│   ├── layout/           # Layout components
-│   │   ├── container.tsx # Container component
-│   │   ├── footer.tsx    # Footer component
-│   │   └── header.tsx    # Header component
-│   └── ui/               # UI components
-│       ├── button.tsx    # Button component
-│       └── card.tsx      # Card component
-├── lib/                  # Utility functions
-│   └── utils.ts          # Helper utilities
+│   ├── page.tsx          # Home page
+│   └── globals.css       # Global styles
+├── components/           # React components
+│   ├── common/           # Reusable UI components
+│   ├── features/         # Feature components (business logic)
+│   ├── layout/           # Layout components (header, footer, container)
+│   ├── sections/         # Page sections
+│   └── ui/               # UI primitives
+├── lib/                  # Libraries and utilities
+│   ├── config/           # Configuration files
+│   ├── hooks/            # Custom React hooks
+│   ├── types/            # TypeScript type definitions
+│   └── utils/            # Utility functions
 ├── public/               # Static assets
-├── tailwind.config.ts    # Tailwind CSS configuration
-├── prettier.config.js    # Prettier configuration
-└── eslint.config.mjs     # ESLint configuration
 ```
 
-## Getting Started
+## Component Organization
 
-### Prerequisites
+- **Common Components**: Reusable components like cards, buttons, and items
+- **Feature Components**: Business logic components that compose sections and common components
+- **Section Components**: Page sections for the landing page and other pages
+- **Layout Components**: Structural components like header, footer, and container
+- **UI Components**: Low-level UI primitives
 
-- Node.js 18.17 or later
-- npm or yarn
+## Development
 
-### Installation
+To run the development server:
 
-1. Clone the repository
-```bash
-git clone https://github.com/your-username/alfred-holdings.git
-cd alfred-holdings
-```
-
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Features
+## Folder Structure Details
 
-- Modern, responsive design
-- Type-safe components with TypeScript
-- Component variants with class-variance-authority
-- Optimized for performance and SEO
-- Accessible UI components
+### `app/`
 
-## Customization
+Contains Next.js app router pages and layouts.
 
-- **Theme**: Customize colors, fonts, and other design elements in the `tailwind.config.ts` file
-- **Components**: Extend or modify existing components in the `components` directory
-- **Pages**: Add new pages in the `app` directory
+### `components/`
 
-## License
+Contains all React components organized by their role:
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- `common/`: Reusable components like cards and UI elements
+- `features/`: Business logic components
+- `layout/`: Layout components like Header and Footer
+- `sections/`: Page sections for different pages
+- `ui/`: UI primitives (buttons, inputs, etc.)
 
-## Learn More
+### `lib/`
 
-To learn more about Next.js, take a look at the following resources:
+Contains utilities and shared logic:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `config/`: Configuration files for the site
+- `hooks/`: Custom React hooks
+- `types/`: TypeScript type definitions
+- `utils/`: Utility functions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `public/`
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contains static assets like images and fonts.

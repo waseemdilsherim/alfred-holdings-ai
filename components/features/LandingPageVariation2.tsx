@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
-import Header from './Header';
-import HeroSection from './HeroSection';
-import LegacySection from './LegacySection';
-import PortfolioSection from './PortfolioSection';
-import LeadershipSection from './LeadershipSection';
-import LocationSection from './LocationSection';
-import CTASection from './CTASection';
-import Footer from './Footer';
-import { Container } from './layout/container';
+import Header from '@/components/layout/Header';
+import HeroSection from '@/components/sections/HeroSection';
+import LegacySection from '@/components/sections/LegacySection';
+import PortfolioSection from '@/components/sections/PortfolioSection';
+import LeadershipSection from '@/components/sections/LeadershipSection';
+import LocationSection from '@/components/sections/LocationSection';
+import CTASection from '@/components/sections/CTASection';
+import Footer from '@/components/layout/Footer';
+import { Container } from '@/components/layout/container';
 
 function LandingPageVariation2() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import LocationItem from './LocationItem';
+import LocationItem from '@/components/common/LocationItem';
 
 const LocationSection = () => {
   const locations = [

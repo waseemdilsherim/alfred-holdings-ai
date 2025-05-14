@@ -1,5 +1,5 @@
 import React from 'react';
-import LegacyFeatureItem from './LegacyFeatureItem';
+import LegacyFeatureItem from '@/components/common/LegacyFeatureItem';
 
 const LegacySection = () => {
   const features = [

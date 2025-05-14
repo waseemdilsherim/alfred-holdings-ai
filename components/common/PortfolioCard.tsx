@@ -1,15 +1,5 @@
 import React, { ReactNode } from 'react';
-
-interface PortfolioCardProps {
-  logo: string;
-  title: string;
-  description: ReactNode;
-  image: string;
-  buttonText?: string;
-  buttonIcon?: string;
-  hasButton?: boolean;
-  className?: string;
-}
+import { PortfolioCardProps } from '@/lib/types';
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   logo,

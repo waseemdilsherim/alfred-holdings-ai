@@ -1,7 +1,7 @@
 import React, { useState, useRef, TouchEvent } from 'react';
-import PortfolioCard from './PortfolioCard';
-import PortfolioCardWide from './PortfolioCardWide';
-import ProfileCard from './ProfileCard';
+import PortfolioCard from '@/components/common/PortfolioCard';
+import PortfolioCardWide from '@/components/common/PortfolioCardWide';
+import ProfileCard from '@/components/common/ProfileCard';
 
 // Define the card data type
 interface PortfolioCardData {

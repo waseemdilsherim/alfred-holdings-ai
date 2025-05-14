@@ -1,15 +1,8 @@
 import React from 'react';
+import { PortfolioCardProps } from '@/lib/types';
 
-interface PortfolioCardWideProps {
-  logo: string;
-  title: string;
-  description: React.ReactNode;
-  image: string;
-  buttonText?: string;
-  buttonIcon?: string;
-  hasButton?: boolean;
+interface PortfolioCardWideProps extends PortfolioCardProps {
   extraTitleLine?: boolean;
-  className?: string;
 }
 
 const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
