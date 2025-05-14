@@ -11,7 +11,7 @@ const Header = () => {
     <header className="w-full overflow-hidden bg-[#4AACE3] text-base max-md:max-w-full">
       {/* web header */}
       <div className="hidden w-full flex-col items-center justify-center px-32 py-4 max-md:max-w-full max-md:px-5 lg:flex">
-        <nav className="fixed top-5 z-10 flex max-w-full flex-wrap items-center justify-between gap-3.5 rounded-[38px] bg-white py-2 pr-2 pl-5">
+        <nav className="fixed top-5 z-20 flex max-w-full flex-wrap items-center justify-between gap-3.5 rounded-[38px] border border-[#4AACE3] bg-white py-2 pr-2 pl-5">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/bba702e66a543ae322606ea1accf7387b7d792f8?placeholderIfAbsent=true&apiKey=ebedc071c73046979fbf35305379ab4e"
             alt="Alfred Holdings Logo"
