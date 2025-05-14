@@ -164,48 +164,18 @@ const PortfolioSection = () => {
   };
 
   // Render card based on type
-  const renderCard = (card: PortfolioCardData, className = '', forMobile = false) => {
-    if (forMobile) {
-      return (
-        <ProfileCard
-          logo={card.logo}
-          title={card.title}
-          description={card.description}
-          image={card.image}
-          buttonText={card.buttonText}
-          buttonIcon={card.buttonIcon}
-          hasButton={card.hasButton}
-        />
-      );
-    }
-
-    if (card.type === 'wide') {
-      return (
-        <PortfolioCardWide
-          logo={card.logo}
-          title={card.title}
-          description={card.description}
-          image={card.image}
-          buttonText={card.buttonText}
-          buttonIcon={card.buttonIcon}
-          hasButton={card.hasButton}
-          className={className}
-        />
-      );
-    } else {
-      return (
-        <PortfolioCard
-          logo={card.logo}
-          title={card.title}
-          description={card.description}
-          image={card.image}
-          buttonText={card.buttonText}
-          buttonIcon={card.buttonIcon}
-          hasButton={card.hasButton}
-          className={className}
-        />
-      );
-    }
+  const renderCard = (card: PortfolioCardData) => {
+    return (
+      <ProfileCard
+        logo={card.logo}
+        title={card.title}
+        description={card.description}
+        image={card.image}
+        buttonText={card.buttonText}
+        buttonIcon={card.buttonIcon}
+        hasButton={card.hasButton}
+      />
+    );
   };
 
   // Mobile slider navigation - use changeSlide for animation
@@ -338,7 +308,7 @@ const PortfolioSection = () => {
               className={`transition-opacity duration-300 ease-in-out ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
             >
               {/* Current slide - consistent height for all cards on mobile */}
-              {renderCard(portfolioCards[currentSlide], 'h-[500px]', true)}
+              {renderCard(portfolioCards[currentSlide])}
             </div>
           </div>
 
