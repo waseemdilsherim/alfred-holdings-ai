@@ -1,12 +1,14 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        geist: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
       colors: {
         primary: {
           50: '#f0f9ff',
@@ -48,4 +50,4 @@ const config: Config = {
   plugins: [],
 };
 
-export default config; 
+export default config;

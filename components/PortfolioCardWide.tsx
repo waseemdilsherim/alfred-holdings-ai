@@ -42,18 +42,18 @@ const PortfolioCardWide: React.FC<PortfolioCardWideProps> = ({
               />
             </div>
           </div>
-          <h3 className="mt-3 text-3xl leading-10 tracking-tighter text-slate-800">
+          <h3 className="mt-3 font-sans text-[32px] leading-10 font-medium tracking-tighter text-slate-800">
             {baseTitle}
             {isSoon && <span className="mt-1 block">(Coming Soon)</span>}
           </h3>
-          <p className="mt-3 text-base leading-7 font-medium tracking-normal text-slate-600">
+          <p className="mt-3 font-sans text-base leading-7 font-medium tracking-normal text-slate-600">
             {description}
           </p>
         </div>
         {hasButton && (
           <a
             href="#"
-            className="mt-6 flex items-center gap-2 self-start text-base leading-none font-semibold tracking-tight text-slate-800 capitalize"
+            className="mt-6 flex items-center gap-2 self-start font-sans text-base leading-none font-semibold tracking-tight text-slate-800 capitalize"
           >
             <span className="my-auto self-stretch text-slate-800">{buttonText}</span>
             <img

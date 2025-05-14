@@ -23,6 +23,26 @@ const PortfolioSection = () => {
   const touchEndRef = useRef<number>(0);
   const sliderRef = useRef<HTMLDivElement>(null);
 
+  // Check if window is available (client-side) and determine mobile state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Set initial value
+    if (typeof window !== 'undefined') {
+      handleResize();
+      window.addEventListener('resize', handleResize);
+    }
+
+    // Cleanup
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
+  }, []);
+
   // Cards data for slider
   const portfolioCards: PortfolioCardData[] = [
     {
@@ -108,26 +128,6 @@ const PortfolioSection = () => {
       hasButton: false,
     },
   ];
-
-  // Check if window is available (client-side) and determine mobile state
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Set initial value
-    if (typeof window !== 'undefined') {
-      handleResize();
-      window.addEventListener('resize', handleResize);
-    }
-
-    // Cleanup
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
 
   // Handle transition between slides
   const changeSlide = (index: number) => {
@@ -236,17 +236,17 @@ const PortfolioSection = () => {
   return (
     <section className="flex w-full flex-col pb-20 lg:pb-40" id="portfolio">
       <div className="flex w-full flex-col justify-center max-md:max-w-full">
-        <h2 className="text-5xl leading-none tracking-tighter text-slate-800 max-md:max-w-full max-md:text-4xl">
+        <h2 className="font-sans text-5xl leading-none tracking-tighter text-slate-800 max-md:max-w-full max-md:text-4xl">
           <span className="text-[#1D83BC]">A Portfolio</span> of Trust-Driven Innovation
         </h2>
-        <p className="mt-4 text-base leading-7 font-medium tracking-normal text-slate-600 max-md:max-w-full">
+        <p className="mt-4 font-sans text-base leading-7 font-medium tracking-normal text-slate-600 max-md:max-w-full">
           Alfred Holdings powers a dynamic portfolio of ventures designed to simplify, enhance, and
           transform everyday experiences in the UAE and beyond.
         </p>
       </div>
 
       {/* Desktop Layout */}
-      <div className="mt-16 hidden max-w-full self-center rounded-3xl md:block">
+      <div className="mt-16 hidden max-w-full self-center md:block">
         <div className="flex gap-5">
           {/* Left column - 2/3 width */}
           <div className="w-[67%]">
@@ -326,7 +326,7 @@ const PortfolioSection = () => {
                       href="http://InsuranceMarket.bh"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline"
+                      className="font-sans underline"
                     >
                       InsuranceMarket.bh
                     </a>{' '}
@@ -349,7 +349,7 @@ const PortfolioSection = () => {
           {/* Slider container with transition effect and swipe handlers */}
           <div
             ref={sliderRef}
-            className="overflow-hidden rounded-3xl"
+            className="overflow-hidden rounded-xl"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
